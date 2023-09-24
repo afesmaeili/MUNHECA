@@ -1,6 +1,6 @@
 # MUNHECA
 
 # AUTHORS
-AmirFarzan Esmaeili
-Arman Esmaili 
-Pasquale Dario Serpico
+AmirFarzan Esmaeili \n
+Arman Esmaili \n
+Pasquale Dario Serpico \n
