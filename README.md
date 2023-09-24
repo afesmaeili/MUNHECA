@@ -1,5 +1,5 @@
-# MUNHECA
-MUNHECA is a public astrophysical code written in python to simulate ultra-high energy electromagnetic cascade. 
+# MUNHECA-v1.0
+MUNHECA is a public astrophysics code written in python to simulate ultra-high energy electromagnetic cascade.  
 
 
 # AUTHORS
