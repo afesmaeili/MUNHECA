@@ -36,7 +36,9 @@ which contains a table of the neutrinos fluxes, containing all-flavors and each 
 
 
 ## AUTHOR
-- AmirFarzan Esmaeili 
+- AmirFarzan Esmaeili
+- Arman Esmaili
+- Pasquale Dario Serpico
 
 
 
