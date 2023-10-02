@@ -25,10 +25,10 @@ ThomsonX = 6.652487*10**-25               # Thomson Cross-section [cm^2]
 alpha = 1/137                             # Fine Structure Constant
 kB = 8.617333*10**-5                      # Boltzmann Constant [eV/Kelvin]
 T0 = 2.725                                # CMB Temperature at the present time [K]
-omega_M = 0.32                            # matter density
-omega_L = 0.68                            # Cosmological Constant density
+omega_M = 0.315                           # matter density
+omega_L = 0.685                           # Cosmological Constant density
 omega_R = 9.4*10**-5                      # Radiation density
-h0 = 67.0                                 # Hubble Const [km/s/Mpc]
+h0 = 67.4                                 # Hubble Const [km/s/Mpc]
 cSpeed = 3*10**5                          # [km/s]
 Mpc = 3.086*10**24                        # [cm]
 #
