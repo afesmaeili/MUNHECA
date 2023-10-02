@@ -35,7 +35,7 @@ These commands end in creating a text file NEUTRINO_EARTH.txt in the same destin
 which contains a table of the neutrinos fluxes, containing all-flavors and each flavor separately, at the Earth. 
 
 
-## AUTHOR
+## AUTHORS
 - AmirFarzan Esmaeili
 - Arman Esmaili
 - Pasquale Dario Serpico
