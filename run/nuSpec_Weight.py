@@ -355,22 +355,3 @@ nu_final_tab = np.vstack((Enu_arr , nu_Flux_AllFlavors , nue_Flux, numu_Flux, nu
 np.savetxt(r'../results/'+str(destination_dir[0])+'/NEUTRINO_EARTH.txt',nu_final_tab,delimiter = ' ',header = '\n THIS FILE IS PRODUCED BY nuSpec_Weight.py  \n NEUTRINOS FLUX AT THE EARTH. \n COLUMNS: \n 1st: Energy [eV] \n 2nd: All Flavor Neutrino Flux \n 3rd: nu_e flux \n 4th: nu_mu Flux  \n 5th: nu_tau Flux \n Units: [eV/cm^2] \n Power = '+str(my_power)+'\n') # EXPORTING THE DATA
 
 
-"""
-tot_power = (1.2*10**43)*(6.242*10**11)
-my_power = np.sum( weight * injBinCenters)
-normalization = tot_power/my_power
-
-
-nu_tab = np.loadtxt("../results/"+str(destination_dir[0])+"/NEUTRINO_EARTH.txt")
-plt.plot(nu_tab[:,0] , normalization*  nu_tab[:,1], lw=2.4, color = 'crimson',label='All Flavor')
-plt.plot(nu_tab[:,0] , normalization* nu_tab[:,2],'--', lw=2.4, color = 'blue',label='nu_e')
-plt.plot(nu_tab[:,0] , normalization*nu_tab[:,3],'--', lw=2.4, color = 'green',label='nu_mu')
-plt.plot(nu_tab[:,0] , normalization*nu_tab[:,4],'--', lw=2.4, color = 'peru',label='nu_tau')
-plt.xscale('log')
-plt.yscale('log')
-plt.xlim(1e+10,1e+16)
-plt.ylim(1e-2,200)
-plt.legend(loc = 'upper left',fontsize=16)
-plt.show()
-"""
-print(my_power)
