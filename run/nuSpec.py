@@ -172,7 +172,7 @@ Pmutau = np.abs(Umu1)**2*np.abs(Utau1)**2 + np.abs(Umu2)**2*np.abs(Utau2)**2 + n
 #   READING THE SETTING FROM THE INPUT FILE COPIED TO THE DESTINATION DIRECTORY:
 #<<<
 parameters = np.genfromtxt(sys.argv[1],dtype='str')
-#parameters = np.genfromtxt('../results/test_Mono_DIR/0M_input.txt',dtype='str')
+
 injection_spec_line = np.where(parameters=='INJ_Spectrum:')
 redshift_line = np.where(parameters=='Redshift:')
 Egamma_line = np.where(parameters=='E_gamma:')
@@ -258,23 +258,6 @@ pion_HistList = np.histogram(piontab , E_binsEdge, density=False)
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #
-#   MUON SPECTRUM: [dN/dE]
-#
-#muon_dNdE = muon_HistList[0]/E_bin
-#pion_dNdE = pion_HistList[0]/E_bin
-
-#muon_dNdE_2d = np.vstack((Emu_binCenter , muon_dNdE)).T
-
-#np.savetxt(r'../results/muon_dNdE.txt'), muon_dNdE_2d , delimiter = ' ',header = '\n Muon spectrum dN/dE \n')
-
-#
-#<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-""">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"""
-"""<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"""
-
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-#
 #   NEUTRINO SOECTRUM FROM MUONS AND PIONS DECAY AT THE SOURCE:
 #
 
@@ -331,7 +314,7 @@ nutau_Flux = Enu_arr**2*(1+redshift) * (Pmutau*dNdEnumu_Src(Enu_arr*(1+redshift)
 
 ####
 nu_final_tab = np.vstack((Enu_arr , nu_Flux_AllFlavors , nue_Flux, numu_Flux, nutau_Flux  )).T
-#nu_final_tab = np.vstack((Enu_arr , nu_Flux_AllFlavors  )).T
+
 
 np.savetxt(r'../results/'+str(destination_dir[0])+'/NEUTRINO_EARTH2.txt' , nu_final_tab , delimiter = ' ' , header = ' \n NEUTRINOS FLUX AT THE EARTH. \n COLUMNS: \n 1st: Energy [eV] \n 2nd: All Flavor Neutrino Flux \n 3rd: nu_e flux \n 4th: nu_mu Flux  \n 5th: nu_tau Flux \n') # EXPORTING THE DATA
 
