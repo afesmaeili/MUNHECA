@@ -1,5 +1,5 @@
 ## MUNHECA-v1.0
-MUNHECA is a public astrophysical code written in python to simulate the electromagnetic cascade and compute the neutrino spectrum from the cascade development. 
+MUNHECA is a public astrophysical code written in python3 to simulate the electromagnetic cascade and compute the neutrino spectrum from the cascade development. 
 
 If you used MUNHECA please cite   
 [![arXiv](https://img.shields.io/badge/arXiv-2310.01510%20-red.svg)](https://arxiv.org/abs/2310.01510)
