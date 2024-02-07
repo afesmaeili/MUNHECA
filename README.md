@@ -11,8 +11,12 @@ An example of the input file, the test.txt, is provided in the /Work directory.
 To run the Monte Carlo session, the following command can be used 
 
 ```
-python [PATH/TO/MUNHECA]/run/Main.py /[PATH/TO/INPUT]/[InputFileName].txt
+python3 [PATH/TO/MUNHECA]/run/Main.py /[PATH/TO/INPUT]/[InputFileName].txt
 ```
+
+WARNING: The executable Main.py is located inside the run directory. The
+execution should be addressed to /run as it is indicated in the com-
+mands.
 
 After the execution, the results of this session will be saved, together with a copy 
 of the input file, to the /results directory. The copied input file's name, depending on 
@@ -21,13 +25,13 @@ the chosen injection spectrum (Monochrome) or (PowerLaw) will be 0M_input.txt or
 To obtain the neutrino fluxes at the Earth the relevant syntaxes are:
 
 ```
-python [PATH/TO/MUNHECA]/run/nuSpec.py ../results/[DESTINATION_DIR]/0M_input.txt
+python3 [PATH/TO/MUNHECA]/run/nuSpec.py ../results/[DESTINATION_DIR]/0M_input.txt
 ```
 
 or
 
 ```
-python [PATH/TO/MUNHECA]/run/nuSpec_Weight.py ../results/[DESTINATION_DIR]/0S_input.txt 
+python3 [PATH/TO/MUNHECA]/run/nuSpec_Weight.py ../results/[DESTINATION_DIR]/0S_input.txt 
 ```
 
 for (Monochrome) or (PowerLaw) injections, respectively. 
